@@ -1,0 +1,37 @@
+#vbox{
+	-fx-padding:34;
+	-fx-background-color:#ECF9FF;
+}
+.box{
+	-fx-alignment:center;
+}
+.label{
+	-fx-padding:10;
+	-fx-font-size:14px;
+	-fx-font-weight:bold;
+	-fx-alignment:center;
+}
+#timeLabel{
+	-fx-font-color:#FF0000;
+}
+.time{
+	-fx-padding:10;
+	-fx-font-size:25px;
+	-fx-font-weight:bold;
+}
+#hours{
+	-fx-alignment:right;
+}
+#minutes{
+	-fx-alignment:left;
+}
+#modeButton{
+	-fx-alignment:center-right;
+}
+#incrementButton{
+	-fx-alignment:center-left;
+}
+.bouton{
+	-fx-text-fill:blue;
+	-fx-background-color:#ECF9FF;
+}

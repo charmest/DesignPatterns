@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="vbox" styleClass="box" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" 
+	  fx:controller="com.State.AppDisplay.FXMLController" stylesheets="@style.css">
+	<children>
+		<Label fx:id="textLabel" styleClass="label" text="Please set the time correctly"/>
+		<Label fx:id="timeLabel" styleClass="label" text="I'm not on time..."/>
+		<Label fx:id="stateLabel" styleClass="label" text="Display mode, please click the mode button to set the time"/>
+		<HBox styleClass="box">
+			<children>
+				<Label fx:id="hours" styleClass="time" text="00"/>
+				<Label styleClass="label" text=":"/>
+				<Label fx:id="minutes" styleClass="time" text="00"/>
+			</children>
+		</HBox>
+		<HBox styleClass="box">
+			<children>
+				<Button fx:id="modeButton" styleClass="bouton" onAction="#modeButton"
+						onMouseEntered="#colorModeButton" onMouseExited="#uncolorModeButton"> MODE </Button>
+				<Button fx:id="incrementButton" styleClass="bouton" onAction="#incrementButton"
+						onMouseEntered="#colorIncrementButton" onMouseExited="#uncolorIncrementButton" disable="true"> INCREMENT </Button>
+			</children>
+		</HBox>
+	</children>
+</VBox>
